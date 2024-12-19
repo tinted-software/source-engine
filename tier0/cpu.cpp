@@ -221,7 +221,7 @@ bool CheckSSE42Technology(void) {
   // SSE4.2 is an Intel-only feature
 
   const char *pchVendor = GetProcessorVendorId();
-  if (0 != V_tier0_stricmp(pchVendor, "GenuineIntel"))
+  if (0 != stricmp(pchVendor, "GenuineIntel"))
     return false;
 
   uint32 eax, ebx, edx, ecx;
@@ -240,7 +240,7 @@ bool CheckSSE4aTechnology(void) {
   // SSE 4a is an AMD-only feature
 
   const char *pchVendor = GetProcessorVendorId();
-  if (0 != V_tier0_stricmp(pchVendor, "AuthenticAMD"))
+  if (0 != stricmp(pchVendor, "AuthenticAMD"))
     return false;
 
   uint32 eax, ebx, edx, ecx;

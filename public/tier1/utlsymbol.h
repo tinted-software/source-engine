@@ -120,7 +120,7 @@ public:
   const char *String(CUtlSymbol id) const;
 
   inline bool HasElement(const char *pStr) const {
-    return Find(pStr) != UTL_INVAL_SYMBOL;
+    return static_cast<UtlSymId_t>(Find(pStr)) != UTL_INVAL_SYMBOL;
   }
 
   // Remove all symbols in the table.

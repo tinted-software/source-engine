@@ -6,6 +6,7 @@
 
 #ifndef MEM_HELPERS_H
 #define MEM_HELPERS_H
+#include <cstddef>
 #ifdef _WIN32
 #pragma once
 #endif

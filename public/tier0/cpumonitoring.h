@@ -7,6 +7,7 @@ CPU frequency in order to detect thermal throttling. For details see the
 associated source file.
 */
 
+#include "tier0/platform.h"
 struct CPUFrequencyResults {
   double m_timeStamp; // Time (from Plat_FloatTime) when the measurements were
                       // made.
